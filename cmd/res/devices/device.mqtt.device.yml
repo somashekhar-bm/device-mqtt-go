@@ -1,0 +1,13 @@
+#Windmill location device
+deviceList:
+  - name: "Windmill-location-Device-mqtt"
+    profileName: "Device-mqtt"
+    description: "Device profile to simulate int, float, string & json"
+    labels: [ "MQTT", "test" ]
+    protocols:
+      mqtt:
+       CommandTopic: "command/Windmill-location-mqtt"
+  # autoEvents:
+  #   interval: "20s"
+  #   onChange: false
+  #   sourceName: ""
