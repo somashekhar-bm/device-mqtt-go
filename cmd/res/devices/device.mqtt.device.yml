@@ -7,6 +7,7 @@ deviceList:
     protocols:
       mqtt:
        CommandTopic: "command/Windmill-location-mqtt"
+
   - name: "Google-pixel-device"
     profileName: "Device-mqtt"
     description: "Google pixel location device(testing)"
@@ -17,7 +18,8 @@ deviceList:
     autoEvents:
       interval: "3s"
       onChange: false
-      sourceName: "Windmill_location"
+      sourceName: Windmill_location
+
   - name: "Samsung-device"
     profileName: "Device-mqtt"
     description: "Samsung loaction device(testing)"
@@ -28,4 +30,4 @@ deviceList:
     autoEvents:
       interval: "3s"
       onChange: false
-      sourceName: "Windmill_location"
+      sourceName: Windmill_location
