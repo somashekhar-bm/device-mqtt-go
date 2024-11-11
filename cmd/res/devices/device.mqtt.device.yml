@@ -10,24 +10,24 @@ deviceList:
 
   - name: "Google-pixel-device"
     profileName: "Device-mqtt"
-    description: "Google pixel location device(testing)"
+    description: "Google pixel device for testing"
     labels: [ "MQTT", "test" ]
     protocols:
       mqtt:
-       CommandTopic: "command/Windmill-location-mqtt-a"
+       CommandTopic: "command/Windmill-location-mqtt-a" 
     autoEvents:
-      interval: "3s"
-      onChange: false
-      sourceName: Windmill_location
+      - interval: "3s"
+        onChange: false
+        sourceName: "Windmill_location"
 
   - name: "Samsung-device"
     profileName: "Device-mqtt"
-    description: "Samsung loaction device(testing)"
+    description: "Samsung device for testing"
     labels: [ "MQTT", "test" ]
     protocols:
       mqtt:
        CommandTopic: "command/Windmill-location-mqtt-b"
     autoEvents:
-      interval: "3s"
-      onChange: false
-      sourceName: Windmill_location
+      - interval: "3s"
+        onChange: false
+        sourceName: "Windmill_location"
